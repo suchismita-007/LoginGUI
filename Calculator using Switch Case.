@@ -1,0 +1,32 @@
+//CALCULATOR using SWITCH_CASE in JAVA
+import java.util.Scanner;
+public class Calculator {
+   public static void main(String args[]) {
+      Scanner sc1 = new Scanner(System.in);
+      System.out.println("1st number ::");
+      int a1 = sc1.nextInt();
+
+      System.out.println("2nd number ::");
+      int b1 = sc1.nextInt();
+
+      System.out.println("Select action");
+      System.out.println("Add-a: Subt-s: Multi-m: Div-d: ");
+      char ch1 = sc1.next().charAt(0);
+      switch(ch1) {
+         case 'a' :
+         System.out.println("Sum: "+(a1+b1));
+         break;
+         case 's' :
+         System.out.println("Difference: "+(a1-b1));
+         break;
+         case 'm' :
+         System.out.println("Product: "+(a1*b1));
+         case 'd' :
+         System.out.println("Result: "+(a1/b1));
+         break;
+         default :
+         System.out.println("Invalid grade");
+      }
+   }
+}
+//This code is contributed  by Sinky Priya.
