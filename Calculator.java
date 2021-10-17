@@ -29,9 +29,11 @@ public class ex6_calculator extends JFrame {
 				String s2=t2.getText();
 				int m=Integer.parseInt(s2);
 				System.out.println("entered text "+s1+" "+s2);
+				int res=n+m;
 				System.out.println("summation is :"+res);
 				System.out.println("Thank You");
 				setVisible(false);
+				dispose();
 				System.exit(0);
 			}
 			});
@@ -43,6 +45,7 @@ public class ex6_calculator extends JFrame {
 				String s1=t1.getText();
 				int n=Integer.parseInt(s1);
 				String s2=t2.getText();
+				int m=Integer.parseInt(s2);
 				System.out.println("entered text "+s1+" "+s2);
 				int res=n-m;
 				System.out.println("subtraction is :"+res);
@@ -72,4 +75,3 @@ public class ex6_calculator extends JFrame {
 	}
 
 }
-
